@@ -48,7 +48,7 @@ pip install -r requirements.txt
 
 Версия Chrome установленного на ваше устройство должно совпадать с версией драйвера. Иначе выведет ошибку.
 
-Для обновления Chrome. [Ссылка](chrome://settings/help)
+Для обновления Chrome. [Ссылка] открывать в  Google Chrome. (chrome://settings/help)
 
 ## Запуск и использование
 
@@ -68,7 +68,7 @@ python main.py -file путь-файла
 python main.py -file путь-файла
 ```
 
-Необязательные аргемменты программы:
+Необязательные аргeмменты программы:
 
  - filename STR - путь до файла, например results_match.xlsx
 
