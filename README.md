@@ -48,7 +48,7 @@ pip install -r requirements.txt
 
 Версия Chrome установленного на ваше устройство должно совпадать с версией драйвера. Иначе выведет ошибку.
 
-Для обновления Chrome. [Ссылка] открывать в  Google Chrome. (chrome://settings/help)
+Для обновления Chrome. [Ссылка](chrome://settings/help) открывать в  Google Chrome.
 
 ## Запуск и использование
 
