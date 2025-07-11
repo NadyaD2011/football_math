@@ -1,10 +1,7 @@
-# Импортируем необходимые библиотеки
-
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium import webdriver
-
 
 import argparse
 import pandas
@@ -12,7 +9,6 @@ import time
 
 
 # Получаем доступ chromedriver
-
 def create_driver():
     custom_options = Options()
     custom_options.add_argument("--start-maximized")
@@ -23,7 +19,6 @@ def create_driver():
 
 
 # Получаем все матчи в формате objects
-
 def get_matchs(driver, link, class_name):
     driver.get(link)
     time.sleep(10)
@@ -34,7 +29,6 @@ def get_matchs(driver, link, class_name):
 
 
 # Получаем все данные по матчам в формате list
-
 def get_results(matchs):
     match_results = []
 
@@ -52,7 +46,6 @@ def get_results(matchs):
 
 
 # Создаём отфильтрованную DataFrame
-
 def create_df(match_results):
     colunms_name = [
         'status',
@@ -71,7 +64,6 @@ def create_df(match_results):
 
 def main():
     # Получаем дынные из запуска файла
-
     parser = argparse.ArgumentParser(
         description="В этой программе вы можете отслеживать результаты матчей."
     )
@@ -96,7 +88,6 @@ def main():
     df = create_df(match_results)
 
     # Сохранение таблице в формате Excel таблицы
-
     file_name = args.filename
     df.to_excel(file_name, index=False)
 
